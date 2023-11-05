@@ -1,0 +1,271 @@
+:root {
+    --iris: #4D5AE5;
+    --white: #FFFFFF;
+    --navy: #2E2F42;
+    --slate: #434455;
+    --cloud: #F4F4FD;
+    --ocean: #404BBF;
+}
+
+/*GENERAL STYLING*/
+ body {
+    font-family: "Roboto", sans-serif;
+}
+
+.list {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    gap: 24px;
+}
+/*END OF GENERAL STYLING*/
+
+/*HEADER AND FOOTER STYLING*/
+.bg-dark {
+    background-color: var(--navy);
+}
+
+.logo {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    /* 116.667% */
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+
+.logoweb {
+    color: var(--iris);
+}
+
+.link {
+    text-decoration: none;
+}
+/*END OF HEADER AND FOOTER STYLING*/
+
+/*HEADER STYLING*/
+.logostudio {
+    color: var(--navy);
+}
+
+.link {
+    color: var(--navy);
+    font-weight: 500;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.32px;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--ocean);
+}
+
+.active {
+    color: var(--ocean);
+}
+
+.active::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--iris);
+    position: relative;
+    top: 16px;
+}
+
+.list-contacts {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-self: space-around;
+    gap: 40px;
+}
+
+.contact-link {
+    color: var(--slate);
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+
+}
+
+.container {
+    width: 1440px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.topline-flex {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.topline-link {
+    display: flex;
+    gap: 40px;
+}
+/*END OF HEADER STYLING*/
+
+/*BUTTON STYLING*/
+.buttons {
+    align-items: center;
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-button {
+    background: var(--iris);
+    border: none;
+    border-radius: 4px;
+    color: var(--white);
+}
+
+.h-button {
+    border: none;
+    border-radius: 4px;
+    color: var(--iris);
+    border-radius: 4px;
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--CLOUD, #F4F4FD);
+}
+/*END OF BUTTON STYLING*/
+
+/*PORTFOLIO STYLING*/
+.portfolio-projects ul {
+    width: 100%;
+}
+
+.portfolio-projects li {
+    width: 33.33%;
+}
+
+.portfolio-card .portfolio-list .portfolio-list-img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio-card {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+}
+
+.portfolio-list {
+    overflow: hidden;
+}
+
+.portfolio-list-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-list:hover .portfolio-image-text {
+    opacity: 0.9;
+    transform: translateY(0);
+}
+
+.portfolio-image-text {
+    position: absolute;
+    background-color: var(--iris);
+    color: var(--white);
+    width: 360px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-image-text p {
+    padding: 40px 32px;;
+}
+
+.h-title {
+    color: var(--navy);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    /* 120% */
+    letter-spacing: 0.4px;
+}
+
+.p-text {
+    color: var(--navy);
+    font-size: 16px;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.32px;
+}
+/*END OF PORTFOLIO STYLING*/
+
+/*FOOTER STYLNG*/
+.logostudio-footer {
+    color: var(--cloud);
+    height: 312px;
+}
+
+.footer-logo-text {
+    margin: 101.5px;
+}
+
+.footer-text {
+    color: var(--cloud);
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+
+.footer-logo-text {
+    margin-top: 101.5px;
+    width: 540px;
+    margin: 101.5px, 189.5px;
+
+}
+
+.background {
+    background: var(--navy);
+}
+
+.socialmedia {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;/* 150% */
+    letter-spacing: 0.32px;
+    width: 804px;
+    flex-shrink: 0;
+    margin-top: 150px;
+}
+
+.socialmedia-icons {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-items: center;
+    margin-bottom: 189.5px;
+    gap: 16px;
+
+}
+
+.team-title-socials-icons {
+    background-color: var(--iris);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--white);
+
+}
+/*END OF FOOTER STYLNG*/
