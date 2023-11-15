@@ -656,6 +656,10 @@ body {
         flex-basis: calc(100% / 2 - 24px);
     }
 
+    .customers-icons {
+        flex-basis: calc(100% / 3 - 30px);
+    }
+
     .footer {
         text-align: center;
     }
@@ -688,12 +692,15 @@ body {
         flex-basis: calc(100% / 4 - 24px);
     }
 
+    .customers-icons {
+        flex-basis: calc(100% / 6 - 30px);
+    }
+
     .footer-menu {
         text-align: left;
     }
 }
 
-   
 @media (max-width: 767px) {
     .desktop-nav {
         display: none;

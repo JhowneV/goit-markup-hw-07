@@ -213,11 +213,22 @@
 /*FOOTER STYLNG*/
 .logostudio-footer {
     color: var(--cloud);
-    height: 312px;
+}
+
+.footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.footer .logo {
+    margin-right: 0;
 }
 
 .footer-logo-text {
-    margin: 101.5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 72px;
 }
 
 .footer-text {
@@ -226,39 +237,19 @@
     letter-spacing: 0.32px;
 }
 
-.footer-logo-text {
-    margin-top: 101.5px;
-    width: 540px;
-    margin: 101.5px, 189.5px;
-
-}
-
 .background {
     background: var(--navy);
 }
 
-.footer-socialmedia {
-    margin-left: 120px;
-
-}
-.socialmedia {
-    color: var(--white);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;/* 150% */
-    letter-spacing: 0.32px;
-    width: 804px;
-    flex-shrink: 0;
-    margin-top: 150px;
+/**FOOTER SOCIAL STYLING**/
+.socialmedia,
+.subscribe-text {
+    margin-top: 0;
+    color: white;
 }
 
-.socialmedia-icons {
-    display: inline-flex;
-    align-items: flex-start;
-    justify-items: center;
-    margin-bottom: 189.5px;
-    gap: 16px;
-
+.footer .team-title-socials-icons {
+    margin-right: 10px;
 }
 
 .team-title-socials-icons {
@@ -266,16 +257,10 @@
     border-radius: 50%;
     height: 40px;
     width: 40px;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     fill: var(--white);
-
-}
-
-.footer-sub {
-    margin-left: 540px;
-    margin-bottom: 132px;
 }
 
 .footer-input-sub {
@@ -283,23 +268,15 @@
     background: none;
     border-radius: 4px;
     padding: 10px;
-    width: 264px;
+    width: webkit-fill-available;
     background-color: none;
-    margin-right: 24px;
+    margin-bottom: 24px;
 }
 
 .footer-input-sub::placeholder {
     color: white
 }
 
-.subscribe-text {
-    color: var(--white);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    /* 150% */
-    letter-spacing: 0.32px;
-}
 
 .button-subscribed {
     display: inline-flex;
@@ -316,7 +293,10 @@
     fill: white;
 }
 
-.footer-email-button {
-    display: flex;
-}
+
 /*END OF FOOTER STYLNG*/
+
+/**CSS MEDIA QUERY**/
+@media (min-width: 428px) {
+
+}
