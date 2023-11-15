@@ -15,85 +15,158 @@
     </head>
 
     <body>
-        <header class="container topline-flex">
-            <div class="topline-flex">
-
-                <a href="WEBSTUDIO" class="logo link">
-                    <span class="logoweb">WEB</span><span class=logostudio>STUDIO</span> </a>
-                <nav>
-                    <ul class="list topline-link">
-                        <li>
-                            <a href="index.html" class="link active">Studio</a>
-                        </li>
-                        <li>
-                            <a href="portfolio.html" class="link">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#Contacts" class="link">Contacts</a>
-                        </li>
-                    </ul>
-                </nav>
+        <header class="header desktop-nav">
+            <div class="container header-container">
+                <div class="d-flex">
+                    <a href="WEBSTUDIO" class="logo link">
+                        <span class="logoweb">WEB</span><span class=logostudio>STUDIO</span> </a>
+                    <nav>
+                        <ul class="list">
+                            <li>
+                                <a href="index.html" class="link nav-link active">Studio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html" class="link nav-link">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#Contacts" class="link nav-link">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <ul class="desktop-contacts">
+                    <li>
+                        <a href="info@devstudio.com" class="link contacts"> info@devstudio.com </a>
+                    </li>
+                    <li>
+                        <a href="+11(000)111-11-11" class="link contacts"> +11 (000) 111-11-11 </a>
+                    </li>
+                </ul>
             </div>
-            <ul class="list-contacts">
-                <li>
-                    <a href="info@devstudio.com" class="link"> info@devstudio.com </a>
-                </li>
-                <li>
-                    <a href="+11(000)111-11-11" class="link"> +11 (000) 111-11-11 </a>
-                </li>
-            </ul>
         </header>
 
+        <header class="mobile-nav">
+            <div class="container mobile-container">
+                <a href="WEBSTUDIO" class="logo link">
+                    <span class="logoweb">WEB</span><span class=logostudio>STUDIO</span> </a>
+                <svg width="32" height="22" class="js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <use href="./images/icons.svg#hamburger"></use>
+                </svg>
+            </div>
+        </header>
+
+        <div class="js-menu-container mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-container">
+                <button class="js-close-menu">
+                    <svg width="18" height="18">
+                        <use href="./images/icons.svg#close"></use>>
+                    </svg>
+                </button>
+                <nav class="mobile-navbar">
+                    <ul class="mobile-nav-menu">
+                        <li class="mobile-menu-navbar">
+                            <a href="index.html" class="link nav-link active-mobile" >Studio</a>
+                        </li>
+                        <li class="mobile-menu-navbar">
+                            <a href="portfolio.html" class="link nav-link">Portfolio</a>
+                        </li>
+                        <li class="mobile-menu-navbar">
+                            <a href="#Contacts" class="link nav-link">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-contacts">
+                        <ul class="mobile-nav-menu">
+                            <li class="list-mobile-contacts">
+                                <a href="+11(000)111-11-11" class="mobile-nav-contact">+11 (000) 111-11-11</a>
+                            </li>
+                            <li class="">
+                                <a href="info@devstudio.com" class="mobile-nav-mail">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="mobile-social-icons">
+                            <li>
+                            <a class="mobile-nav-socials-icons">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#instagram-2"></use>
+                                </svg>
+                            </a>
+                            </li>
+                            <li>
+                            <a class="mobile-nav-socials-icons">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#twitter-1"></use>
+                                </svg>
+                            </a>
+                            </li>
+                            <li>
+                            <a class="mobile-nav-socials-icons">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#facebook-1"></use>
+                                </svg>
+                            </a>
+                            </li>
+                            <li>
+                            <a class="mobile-nav-socials-icons">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#linkedin-1"></use>
+                                </svg>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
         <main>
-            <section class="hero bg-dark">
+            <section class="hero">
                 <div class="hero-section">
                     <h1 class="hero-text">Effective Solutions <br> for your Business</h1>
                     <button type="button" class="hero-button" data-modal-open>Our Services</button>    
-                        <div class="backdrop is-hidden" data-modal>
-                            <div class="modal">
-                                <button class="modal-close-button" data-modal-close>
-                                    <svg width="18" height="18">
-                                        <use href="./images/icons.svg#close"></use>
+                    <div class="backdrop is-hidden" data-modal>
+                        <div class="modal">
+                            <button class="modal-close-button" data-modal-close>
+                                <svg width="18" height="18">
+                                    <use href="./images/icons.svg#close"></use>
+                                </svg>
+                            </button>
+                            <h2 class="modal-text">Leave your contacts and we will call you back</h2>
+                            <form class="modal-service-form">
+                                <label for="name" class="modal-service-label">
+                                    <span class="input-label">Name</span>
+                                    <input type="text" class="modal-service-input" />
+                                    <svg width="18" height="18" class="modal-service-icon">
+                                        <use href="./images/icons.svg#person"></use>
+                                    </svg>  
+                                </label>
+                                <label for="name" class="modal-service-label">
+                                    <span class="input-label">Phone</span>
+                                    <input type="text" class="modal-service-input" />
+                                    <svg width="18" height="18" class="modal-service-icon">
+                                        <use href="./images/icons.svg#phone"></use>
                                     </svg>
-                                </button>
-                                <h2 class="modal-text">Leave your contacts and we will call you back</h2>
-                                <form class="modal-service-form">
-                                    <label for="name" class="modal-service-label">
-                                        <span class="input-label">Name</span>
-                                        <input type="text" class="modal-service-input" />
-                                        <svg width="18" height="18" class="modal-service-icon">
-                                            <use href="./images/icons.svg#person"></use>
-                                        </svg>  
-                                    </label>
-                                    <label for="name" class="modal-service-label">
-                                        <span class="input-label">Phone</span>
-                                        <input type="text" class="modal-service-input" />
-                                        <svg width="18" height="18" class="modal-service-icon">
-                                            <use href="./images/icons.svg#phone"></use>
-                                        </svg>
-                                    </label>
-                                    <label for="name" class="modal-service-label">
-                                        <span class="input-label">Email</span>
-                                        <input type="text" class="modal-service-input" />
-                                        <svg width="18" height="18" class="modal-service-icon">
-                                            <use href="./images/icons.svg#email"></use>
-                                        </svg>
-                                    </label>
-                                    <label for="comment" class="modal-service-label">
-                                        <span class="input-label">Comment</span>
-                                        <textarea class="input-label-textarea" rows="8" placeholder="Text input"></textarea>
-                                    </label>
-                                    <label for="agree" class="service-agree">
-                                        <input type="checkbox" name="agree" class="agree-checkbox">
-                                        <svg width="16" height="16" class="check-icon">
-                                            <use href="./images/icons.svg#checkbox"></use>
-                                        </svg>
-                                        <span class="agree-text">I accept the terms and conditions of the <a href="PrivacyPolicy">Privacy Policy</a></span>
-                                    </label>
-                                    <button class="modal-send">Send</button>
-                                </form>
-                            </div> 
-                        </div>
+                                </label>
+                                <label for="name" class="modal-service-label">
+                                    <span class="input-label">Email</span>
+                                    <input type="text" class="modal-service-input" />
+                                    <svg width="18" height="18" class="modal-service-icon">
+                                        <use href="./images/icons.svg#email"></use>
+                                    </svg>
+                                </label>
+                                <label for="comment" class="modal-service-label">
+                                    <span class="input-label">Comment</span>
+                                    <textarea class="input-label-textarea" rows="8" placeholder="Text input"></textarea>
+                                </label>
+                                <label for="agree" class="service-agree">
+                                    <input type="checkbox" name="agree" class="agree-checkbox">
+                                    <svg width="16" height="16" class="check-icon">
+                                        <use href="./images/icons.svg#checkbox"></use>
+                                    </svg>
+                                    <span class="agree-text">I accept the terms and conditions of the <a href="PrivacyPolicy">Privacy Policy</a></span>
+                                </label>
+                                <button class="modal-send">Send</button>
+                            </form>
+                        </div> 
+                    </div>
                 </div>              
             </section>
         
@@ -101,7 +174,7 @@
                 <div class="about">
                     <div class="container">
                         <ul class="list">
-                            <li>
+                            <li class="list-about">
                                 <div class="about-icon">
                                     <svg width="64" height="64">
                                         <use href="./images/icons.svg#antenna-1"></use>
@@ -112,7 +185,7 @@
                                     creative
                                     solution.</p>
                             </li>
-                            <li>
+                            <li class="list-about">
                                 <div class="about-icon">
                                     <svg width="64" height="64">
                                         <use href="./images/icons.svg#clock-1"></use>
@@ -123,7 +196,7 @@
                                     possible
                                     time.</p>
                             </li>
-                            <li>
+                            <li class="list-about">
                                 <div class="about-icon">
                                     <svg width="64" height="64">
                                         <use href="./images/icons.svg#diagram-1"></use>
@@ -134,7 +207,7 @@
                                     and
                                     minimize risk.</p>
                             </li>
-                            <li>
+                            <li class="list-about">
                                 <div class="about-icon">
                                     <svg width="64" height="64">
                                         <use href="./images/icons.svg#envelope"></use>
@@ -150,19 +223,21 @@
             </section>
         
             <section class="what-we-do">
-                    <h2 class="main-title">What Are We Doing</h2>
-                <div>
-                    <ul class="list">
-                        <li>
-                            <img src="images/img1.jpg" alt="desktop" width="360">
-                        </li>
-                        <li>
-                            <img src="images/img2.jpg" alt="mobile" width="360">
-                        </li>
-                        <li>
-                            <img src="images/img3.jpg" alt="mobiledesktop" width="360">
-                        </li>
-                    </ul>
+                <div class="whatwedo">
+                        <h2 class="main-title">What Are We Doing</h2>
+                    <div class="container">
+                        <ul class="list">
+                            
+                                <img src="images/img1.jpg" alt="desktop" width="360">
+                            </li>
+                            <li>
+                                <img src="images/img2.jpg" alt="mobile" width="360">
+                            </li>
+                            <li>
+                                <img src="images/img3.jpg" alt="mobiledesktop" width="360">
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         
@@ -171,7 +246,7 @@
                 <div class=" our-teams-section">
                     <div class="container">
                         <ul class="list">
-                            <li> 
+                            <li class="list-team"> 
                                 <img src="images/teamcard1.jpg" alt="markguerro" width="264">
                                 <div class="team-title">
                                         <h3 class="h-title"> Mark Guerrero</h3>
@@ -199,7 +274,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="list-team">
                                 <img src="images/teamcard2.jpg" alt="tomford" width="264">
                                 <div class="team-title">
                                         <h3 class="h-title"> Tom Ford</h3>
@@ -227,7 +302,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="list-team">
                                 <img src="images/teamcard3.jpg" alt="camilagarcia" width="264">
                                 <div class="team-title">
                                         <h3 class="h-title"> Camila Garcia</h3>
@@ -255,7 +330,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li class="list-team">
                                 <img src="images/teamcard4.jpg" alt="danielwilson" width="264">
                                 <div class="team-title">
                                         <h3 class="h-title"> Daniel Wilson</h3>
@@ -289,6 +364,7 @@
             </section>
 
             <section class="customers">
+                <div class="container">
                     <h2 class="main-title">Customers</h2>
                     <ul class="list">
                         <li class="customers-icons">
@@ -334,57 +410,63 @@
                             </a>
                         </li>
                     </ul>
-                </section>
-        </main>
-
-        <Footer class="bg-dark">
-            <section class="container">
-                <div class="footer-logo-text">
-                    <a href="WEBSTUDIO" class="logo link ">
-                        <span class="logoweb">WEB</span><span class="logostudio-footer">STUDIO</span> </a>
-
-                    <p class="footer-text">Web Studio Increase the flow of customers and <br> sales for your business with digital
-                        <br> marketing & growth solutions.</p>
-                </div>
-                <!--Social Media-->
-                <div class="footer-socialmedia">
-                    <p class="socialmedia">Social media</p>
-                
-                    <div class="socialmedia-icons">  
-                        <a class="team-title-socials-icons">
-                            <svg width="16" height="16">
-                                <use href="./images/icons.svg#instagram-2"></use>
-                            </svg>
-                        </a>
-                        <a class="team-title-socials-icons">
-                            <svg width="16" height="16">
-                                <use href="./images/icons.svg#twitter-1"></use>
-                            </svg>
-                        </a>
-                        <a class="team-title-socials-icons">
-                            <svg width="16" height="16">
-                                <use href="./images/icons.svg#facebook-1"></use>
-                            </svg>
-                        <a class="team-title-socials-icons">
-                            <svg width="16" height="16">
-                                <use href="./images/icons.svg#linkedin-1"></use>
-                            </svg>
-                        </a>
-                    </div>
                 </div>
             </section>
-                <div class="footer-sub">
-                    <p class="subscribe-text">Subscribe</p>
-                    <form>
-                        <input type="text" placeholder="Email" class="footer-input-sub">
-                        <button class="button-subscribed">Subscribed
-                            <svg width="24" height="24">
-                                <use href="./images/icons.svg#send"></use>
-                            </svg>
-                        </button>
-                    </form>
-                </div>   
+        </main>
+
+        <Footer class="bg-dark footer d-flex footer-menu">
+            <div class="container">
+                <div class="footer-logo-text">
+                    <div>
+                        <a href="WEBSTUDIO" class="logo link">
+                            <span class="logoweb">WEB</span><span class="logostudio-footer">STUDIO</span> </a>
+
+                        <p class="footer-text">Web Studio Increase the flow of customers and <br> sales for your business with digital
+                            <br> marketing & growth solutions.</p>
+                    </div>
+                    <!--Social Media-->
+                    <div class="footer-socialmedia">
+                        <p class="socialmedia">Social media</p>
+                        <div class="d-flex">  
+                            <a class="team-title-socials-icons">
+                                <svg width="16" height="16">
+                                    <use href="./images/icons.svg#instagram-2"></use>
+                                </svg>
+                            </a>
+                            <a class="team-title-socials-icons">
+                                <svg width="16" height="16">
+                                    <use href="./images/icons.svg#twitter-1"></use>
+                                </svg>
+                            </a>
+                            <a class="team-title-socials-icons">
+                                <svg width="16" height="16">
+                                    <use href="./images/icons.svg#facebook-1"></use>
+                                </svg>
+                            <a class="team-title-socials-icons">
+                                <svg width="16" height="16">
+                                    <use href="./images/icons.svg#linkedin-1"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-sub">
+                        <p class="subscribe-text">Subscribe</p>
+                        <form class="footer-form">
+                            <input type="text" placeholder="Email" class="footer-input-sub" />
+                            <button class="button-subscribed">Subscribed
+                                <svg width="24" height="24">
+                                    <use href="./images/icons.svg#send"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div> 
+            </div>
         </Footer>
-        <script src="./js/modal.js" type="text/javascript"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./js/mobile-menu.js"></script>
+        <script type="text/javascript" src="./js/modal.js"></script>
     </body>
 </html>
