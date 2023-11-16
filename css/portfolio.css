@@ -304,8 +304,8 @@
 
 .portfolio-projects li {
     width: 33.33%;
-}
-**/
+}**/
+
 .portfolio-card .portfolio-list .portfolio-list-img {
     width: 100%;
     display: block;
@@ -476,9 +476,18 @@
     .container {width: 768px;
     }
 
+    .portfolio-projects ul {
+        width: 100%;
+        gap: 24px
+    }
+
+    .portfolio-projects li {
+        width: 33.33%;
+        gap: 24px;
+    }
+
     .portfolio-list {
         flex-basis: calc(100% / 2 - 24px);
-        margin-right: auto;
     }
 
     .footer {
@@ -512,7 +521,6 @@
 
     .portfolio-list {
         flex-basis: calc(100% / 3 - 24px);
-        margin-right: auto;
     }
 
     .footer-menu {
@@ -556,7 +564,3 @@
     }
 }
 
-@media (max-width: 428px) {
-
-
-}
