@@ -478,12 +478,13 @@
 
     .portfolio-projects ul {
         width: 100%;
-        gap: 24px
+        gap: 24px;
     }
 
     .portfolio-projects li {
         width: 33.33%;
         gap: 24px;
+        margin-right: auto;
     }
 
     .portfolio-list {
