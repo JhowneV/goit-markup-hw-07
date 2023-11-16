@@ -145,7 +145,7 @@ body {
 
 /*END OF HEADER STYLING*/
 
-/**NAVIGATION STYLING**/
+/**HUMBURGER STYLING**/
 .desktop-contacts {
     margin-left:auto;
     padding-left: 0;
@@ -242,7 +242,7 @@ body {
 .js-close-menu {
     position: absolute;
 }
-/**END OF NAVIGATION STYLING**/
+/**END OF HUMBURGER STYLING**/
 
 /*HERO SECTION STYLING*/
 .hero {
@@ -488,6 +488,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .p-text {
     color: var(--navy);
     font-size: 16px;
