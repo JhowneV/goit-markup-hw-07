@@ -225,6 +225,7 @@
     height: 100%;
     display: none;
     position: relative;
+    z-index: 999;
 }
 
 .mobile-menu-navbar {
@@ -588,5 +589,10 @@
     .footer {
         text-align: center;
     }
+
+    .footer-input-sub {
+        width: -webkit-fill-available;
+    }
 }
+
 
